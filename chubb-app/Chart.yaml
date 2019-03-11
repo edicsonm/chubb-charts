@@ -3,3 +3,4 @@ appVersion: "1.0"
 description: A Helm chart for Chubb Entsia
 name: chubb-app
 version: 0.1.1
+icon: https://edicsonm.github.io/chubb-charts/images/Chubb.png
