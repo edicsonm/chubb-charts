@@ -3,29 +3,21 @@ entries:
   chubb-app:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-03-11T19:16:25.65948+11:00
-    description: A Helm chart for Kubernetes
-    digest: 19bbb42f567cda82a17f3446a6eb34aad32f81c0c15c56725d405c3f1068baef
+    created: 2019-03-11T19:26:40.469752+11:00
+    description: A Helm chart for Chubb Entsia
+    digest: 5c33186d394c7ca7b8c190542c58652818dcd48d091330db74705a44fa254cc4
+    icon: https://edicsonm.github.io/chubb-charts/images/Chubb.png
     name: chubb-app
     urls:
     - https://edicsonm.github.io/chubb-charts/chubb-app-0.1.1.tgz
     version: 0.1.1
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-03-11T19:16:25.658281+11:00
-    description: A Helm chart for Kubernetes
-    digest: bb1e746141ca24f655ed7ae77e0f2759dd3b3e670ee5fb86ef5d1e1fa060770e
-    name: chubb-app
-    urls:
-    - https://edicsonm.github.io/chubb-charts/chubb-app-0.1.0.tgz
-    version: 0.1.0
   chubb-st-configmap:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-03-11T19:16:25.659756+11:00
+    created: 2019-03-11T19:26:40.470141+11:00
     description: A Helm chart for Chubb Entsia
-    digest: c067852b83a5f05550f7c3fb4dd2c9c1798a2934a324784d3eac2343b017d885
-    icon: https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png
+    digest: ac71f61427221dd95401d05771c9024203676b07aedc0dd818e4c0d4d559d432
+    icon: https://edicsonm.github.io/chubb-charts/images/Chubb.png
     name: chubb-st-configmap
     urls:
     - https://edicsonm.github.io/chubb-charts/chubb-st-configmap-0.1.0.tgz
@@ -33,12 +25,12 @@ entries:
   chubb-uat-configmap:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-03-11T19:16:25.660061+11:00
+    created: 2019-03-11T19:26:40.471809+11:00
     description: A Helm chart for Chubb Entsia
-    digest: 9d5123360e49f1ded15bd3294a16cfe101960714de30883372777b695728c114
-    icon: https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png
+    digest: c8e8d9c2423fcdae7bb3da25517c26dcdf2355b0cb90731b7a1dc6b99f82ec98
+    icon: https://edicsonm.github.io/chubb-charts/images/Chubb.png
     name: chubb-uat-configmap
     urls:
     - https://edicsonm.github.io/chubb-charts/chubb-uat-configmap-0.1.0.tgz
     version: 0.1.0
-generated: 2019-03-11T19:16:25.656285+11:00
+generated: 2019-03-11T19:26:40.468503+11:00
