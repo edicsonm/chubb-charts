@@ -1,9 +1,20 @@
 apiVersion: v1
 entries:
+  chub-uat-configmap:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2019-03-11T19:02:45.329433+11:00
+    description: A Helm chart for Chubb Entsia
+    digest: 287bc9f3bd6180c4b94ae9434f20d59c723a6269142683f9d8294b0acaf5e173
+    icon: https://edicsonm.github.io/images/Chubb.jpg
+    name: chub-uat-configmap
+    urls:
+    - https://edicsonm.github.io/chubb-charts/chub-uat-configmap-0.1.0.tgz
+    version: 0.1.0
   chubb-app:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-03-11T18:36:33.712415+11:00
+    created: 2019-03-11T19:02:45.330566+11:00
     description: A Helm chart for Kubernetes
     digest: 19bbb42f567cda82a17f3446a6eb34aad32f81c0c15c56725d405c3f1068baef
     name: chubb-app
@@ -12,11 +23,11 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-03-11T18:36:33.711464+11:00
+    created: 2019-03-11T19:02:45.3299+11:00
     description: A Helm chart for Kubernetes
     digest: bb1e746141ca24f655ed7ae77e0f2759dd3b3e670ee5fb86ef5d1e1fa060770e
     name: chubb-app
     urls:
     - https://edicsonm.github.io/chubb-charts/chubb-app-0.1.0.tgz
     version: 0.1.0
-generated: 2019-03-11T18:36:33.710647+11:00
+generated: 2019-03-11T19:02:45.328256+11:00
