@@ -3,7 +3,7 @@ entries:
   chubb-app:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-03-12T15:18:09.852381+11:00
+    created: 2019-03-12T15:30:42.506822+11:00
     description: A Helm chart for Chubb Entsia
     digest: 5c33186d394c7ca7b8c190542c58652818dcd48d091330db74705a44fa254cc4
     icon: https://edicsonm.github.io/chubb-charts/images/Chubb.png
@@ -14,9 +14,9 @@ entries:
   chubb-rc-configmap:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-03-12T15:18:09.852671+11:00
+    created: 2019-03-12T15:30:42.507091+11:00
     description: A Helm chart for Chubb Entsia to deploy configmap for RC environment.
-    digest: bde3ebda60bb3bf53fdfe5f33dcf7bdf54f46881fd85955b1463d8bbdf0bd45e
+    digest: c7891c5cc3307a17d27eef80fff1368da152d97af18e6564bdc8989c4d5f8cde
     icon: https://edicsonm.github.io/chubb-charts/images/Chubb.png
     maintainers:
     - email: edicson@entsia.com
@@ -28,9 +28,9 @@ entries:
   chubb-st-configmap:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-03-12T15:18:09.857905+11:00
+    created: 2019-03-12T15:30:42.511221+11:00
     description: A Helm chart for Chubb Entsia
-    digest: dd25e97e839ab95bdc2ed32508b9ebd2a61eda3c51adeb296f7a1ac4d82acc5d
+    digest: c376a4fd32e46e872dfb96b9c9a716c9018b277ef556c3f3bd33759f6848948e
     icon: https://edicsonm.github.io/chubb-charts/images/Chubb.png
     name: chubb-st-configmap
     urls:
@@ -38,7 +38,7 @@ entries:
     version: 0.1.8
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-03-12T15:18:09.857616+11:00
+    created: 2019-03-12T15:30:42.510993+11:00
     description: A Helm chart for Chubb Entsia
     digest: bb9183040aa776c0ca185e514b351f854195bce195e44514f9506dda90cd93ed
     icon: https://edicsonm.github.io/chubb-charts/images/Chubb.png
@@ -48,7 +48,7 @@ entries:
     version: 0.1.7
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-03-12T15:18:09.857297+11:00
+    created: 2019-03-12T15:30:42.510452+11:00
     description: A Helm chart for Chubb Entsia
     digest: d438bd0274591365a5d825387b08bf5802e1631baf760d51bf89044bd25688a2
     icon: https://edicsonm.github.io/chubb-charts/images/Chubb.png
@@ -58,7 +58,7 @@ entries:
     version: 0.1.6
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-03-12T15:18:09.856672+11:00
+    created: 2019-03-12T15:30:42.509942+11:00
     description: A Helm chart for Chubb Entsia
     digest: 8e6b96fd685bf001fcc8c02ec253be3abe73bc7bb72d1a6501fefa5c0dbbeaa1
     icon: https://edicsonm.github.io/chubb-charts/images/Chubb.png
@@ -68,7 +68,7 @@ entries:
     version: 0.1.5
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-03-12T15:18:09.855613+11:00
+    created: 2019-03-12T15:30:42.509481+11:00
     description: A Helm chart for Chubb Entsia
     digest: c6e6aa1c48bfba194eface0758a63727bffbfc7624424b289db640e72ce5c059
     icon: https://edicsonm.github.io/chubb-charts/images/Chubb.png
@@ -78,7 +78,7 @@ entries:
     version: 0.1.4
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-03-12T15:18:09.854943+11:00
+    created: 2019-03-12T15:30:42.508875+11:00
     description: A Helm chart for Chubb Entsia
     digest: 61ce87b3d08e285ffc45a0c1d1bc2f6622b77d3326d2bbad4db31df28c86c9ee
     icon: https://edicsonm.github.io/chubb-charts/images/Chubb.png
@@ -88,7 +88,7 @@ entries:
     version: 0.1.3
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-03-12T15:18:09.854308+11:00
+    created: 2019-03-12T15:30:42.508411+11:00
     description: A Helm chart for Chubb Entsia
     digest: c2ed19821738c5c550458e3144b6d9df7206a308b0d7883a1d88a4aff646172e
     icon: https://edicsonm.github.io/chubb-charts/images/Chubb.png
@@ -98,7 +98,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-03-12T15:18:09.853765+11:00
+    created: 2019-03-12T15:30:42.508005+11:00
     description: A Helm chart for Chubb Entsia
     digest: 498ca0d5c86ffb2bf307f99e02b155d54133361237dce829a983a5b87f5df100
     icon: https://edicsonm.github.io/chubb-charts/images/Chubb.png
@@ -108,7 +108,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-03-12T15:18:09.853219+11:00
+    created: 2019-03-12T15:30:42.507586+11:00
     description: A Helm chart for Chubb Entsia
     digest: ac71f61427221dd95401d05771c9024203676b07aedc0dd818e4c0d4d559d432
     icon: https://edicsonm.github.io/chubb-charts/images/Chubb.png
@@ -119,12 +119,12 @@ entries:
   chubb-uat-configmap:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-03-12T15:18:09.858208+11:00
+    created: 2019-03-12T15:30:42.511451+11:00
     description: A Helm chart for Chubb Entsia
-    digest: 9dedb55f4464befa629b2c01af2d4fd54cc87b555a6034ac815c91323a4e9fd8
+    digest: 0e448d50a26dab7db5be06b4b4f64e076fa239a9bc1c40a138134d5891eec7bf
     icon: https://edicsonm.github.io/chubb-charts/images/Chubb.png
     name: chubb-uat-configmap
     urls:
     - https://edicsonm.github.io/chubb-charts/chubb-uat-configmap-0.1.0.tgz
     version: 0.1.0
-generated: 2019-03-12T15:18:09.8515+11:00
+generated: 2019-03-12T15:30:42.505746+11:00
