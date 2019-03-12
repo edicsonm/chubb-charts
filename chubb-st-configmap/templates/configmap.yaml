@@ -23,4 +23,4 @@ data:
     JAVA_OPTS: -Xms64m -Xmx2048m -XX:MetaspaceSize=96M -Djava.net.preferIPv4Stack=true -javaagent:/opt/jboss/dd-java-agent.jar
     database-helo-ddl-username: st_cod_helo
     database-helo-runtime-username: st_cod_helo_runtime
-    db-hostname: {{.Values.platform.db_hostname}}
+    db-hostname: entsia-avmh-rds-01.coaeljwic7t7.ap-southeast-2.rds.amazonaws.com
