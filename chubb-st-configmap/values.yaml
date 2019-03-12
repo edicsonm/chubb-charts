@@ -2,7 +2,6 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-
 dd_agent_host: datadog
 dd_apm_enabled: true
 dd_service_name: CHUBB_ON_DEMAND_ST
