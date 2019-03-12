@@ -2,13 +2,12 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-datadog:
-  dd_agent_host: datadog
-  dd_apm_enabled: true
-  dd_service_name: CHUBB_ON_DEMAND_ST
-  dd_trace_agent_port: "32441"
-platform:
-  database_helo_ddl_username: st_cod_helo
-  database_helo_runtime_username: st_cod_helo_runtime
-  db_hostname: "entsia-avmh-rds-01.coaeljwic7t7.ap-southeast-2.rds.amazonaws.com"
+
+dd_agent_host: datadog
+dd_apm_enabled: true
+dd_service_name: CHUBB_ON_DEMAND_ST
+dd_trace_agent_port: "32441"
+database_helo_ddl_username: st_cod_helo
+database_helo_runtime_username: st_cod_helo_runtime
+db_hostname: "entsia-avmh-rds-01.coaeljwic7t7.ap-southeast-2.rds.amazonaws.com"
 java_opts: "-Xms64m -Xmx2048m -XX:MetaspaceSize=96M -Djava.net.preferIPv4Stack=true -javaagent:/opt/jboss/dd-java-agent.jar"

@@ -5,10 +5,10 @@ metadata:
     labels:
         env: st
 data:
-    DD_AGENT_HOST: {{.Values.datadog.dd_agent_host}}
-    DD_APM_ENABLED: {{.Values.datadog.dd_apm_enabled}}
-    DD_SERVICE_NAME: {{.Values.datadog.dd_service_name}}
-    DD_TRACE_AGENT_PORT: "32441"
+    DD_AGENT_HOST: {{.Values.dd_agent_host}}
+    DD_APM_ENABLED: {{.Values.dd_apm_enabled}}
+    DD_SERVICE_NAME: {{.Values.dd_service_name}}
+    DD_TRACE_AGENT_PORT:  {{.Values.dd_trace_agent_port}}
     JAVA_OPTS: "-Xms64m -Xmx2048m -XX:MetaspaceSize=96M -Djava.net.preferIPv4Stack=true -javaagent:/opt/jboss/dd-java-agent.jar"
     database-helo-ddl-username: st_cod_helo
     database-helo-runtime-username: st_cod_helo_runtime
