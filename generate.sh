@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-var currentDate = date +"%T"
+currentDate = date +"%T"
 helm package chubb-*-configmap
 helm repo index ./ --url https://edicsonm.github.io/chubb-charts/
 git add .
