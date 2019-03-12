@@ -4,9 +4,9 @@
 
 datadog:
   dd_agent_host: datadog
-  dd_apm_enabled: "true"
+  dd_apm_enabled: true
   dd_service_name: CHUBB_ON_DEMAND_ST
-  dd_trace_agent_port: "32441"
+  dd_trace_agent_port: 32441
 
 platform:
   database_helo_ddl_username: st_cod_helo
