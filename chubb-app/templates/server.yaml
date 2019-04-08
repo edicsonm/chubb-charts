@@ -4,6 +4,7 @@ metadata:
     name: {{ .Release.Name }}-server
     labels:
         app: deployment-{{ .Release.Name }}
+        env: {{.Values.env}}
 spec:
     replicas: {{.Values.server.replicaCount}}
     selector:
@@ -28,9 +29,9 @@ spec:
                       - configMapRef:
                             name: {{ .Release.Name }}-configmap
                             optional: false
-                                    {{/*- secretRef:*/}}
-                {{/*name: st-secrets*/}}
-                {{/*optional: false*/}}
+                      - secretRef:
+                            name: {{ .Release.Name }}-secrets
+                            optional: false
             volumes:
                 - name: vol1
                   hostPath:

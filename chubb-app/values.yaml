@@ -2,6 +2,8 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
+env: st
+
 configmap:
   dd_agent_host: datadog
   dd_apm_enabled: true
@@ -11,6 +13,11 @@ configmap:
   database_helo_runtime_username: st_cod_helo_runtime
   java_opts: "-Xms64m -Xmx2048m -XX:MetaspaceSize=96M -Djava.net.preferIPv4Stack=true -javaagent:/opt/jboss/dd-java-agent.jar"
   db_hostname: chubb-avmh-nonprodrds-01.cteodrvok6fw.ap-southeast-2.rds.amazonaws.com
+
+secrets:
+  DD_API_KEY: 4491452dc4ed27d50dae68db230d6142
+  database_helo_ddl_password: Pa55w0rd
+  database_helo_runtime_password: Pa55w0rd
 
 server:
   name: server-test

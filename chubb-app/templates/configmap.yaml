@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
     name: {{ .Release.Name }}-configmap
     labels:
-        env: st
+        env: {{.Values.env}}
 data:
     DD_AGENT_HOST: {{.Values.configmap.dd_agent_host}}
     DD_APM_ENABLED:  "{{.Values.configmap.dd_apm_enabled}}"
