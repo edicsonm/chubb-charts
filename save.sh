@@ -2,5 +2,5 @@
 
 currentDate=$(date +"%T")
 git add .
-git commit -m "Generating new distribution at $currentDate"
+git commit -m "Saving changes at $currentDate"
 git push origin master

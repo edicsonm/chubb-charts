@@ -32,6 +32,46 @@ spec:
                       - secretRef:
                             name: {{ .Release.Name }}-secrets
                             optional: false
+                  imagePullPolicy: Always
+                  livenessProbe:
+                      failureThreshold: 3
+                      httpGet:
+                          path: /status
+                          port: 6060
+                          scheme: HTTP
+                      initialDelaySeconds: 60
+                      periodSeconds: 10
+                      successThreshold: 1
+                      timeoutSeconds: 10
+                  readinessProbe:
+                      failureThreshold: 3
+                      httpGet:
+                          path: /status
+                          port: 6060
+                          scheme: HTTP
+                      initialDelaySeconds: 60
+                      periodSeconds: 10
+                      successThreshold: 2
+                      timeoutSeconds: 10
+                  resources: {}
+                  securityContext:
+                      allowPrivilegeEscalation: false
+                      capabilities: {}
+                      privileged: false
+                      procMount: Default
+                      readOnlyRootFilesystem: false
+                      runAsNonRoot: false
+                  stdin: true
+                  terminationMessagePath: /dev/termination-log
+                  terminationMessagePolicy: File
+                  tty: true
+            dnsPolicy: ClusterFirst
+            imagePullSecrets:
+                - name: dockerhubentsia
+            restartPolicy: Always
+            schedulerName: default-scheduler
+            securityContext: {}
+            terminationGracePeriodSeconds: 30
             volumes:
                 - name: vol1
                   hostPath:
