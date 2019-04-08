@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: {{ .Release.Name }}-server
+    labels:
+        app: deployment-{{ .Release.Name }}
+spec:
+    replicas: {{.Values.server.replicaCount}}
+    selector:
+        matchLabels:
+            app: deployment-{{ .Release.Name }}
+    template:
+        metadata:
+            labels:
+                app: deployment-{{ .Release.Name }}
+        spec:
+            containers:
+                - name: {{ .Release.Name }}-server
+                  image: entsia/cod:server_201904080956
+                  ports:
+                      - containerPort: {{.Values.server.containerPort}}
+                  volumeMounts:
+                      - mountPath: /opt/jboss/wildfly/standalone/deployments/helo.war/WEB-INF/classes/secrets.properties
+                        name: vol1
+                      - mountPath: /opt/jboss/dd-java-agent.jar
+                        name: vol2
+                  envFrom:
+                      - configMapRef:
+                            name: {{ .Release.Name }}-configmap
+                            optional: false
+                                    {{/*- secretRef:*/}}
+                {{/*name: st-secrets*/}}
+                {{/*optional: false*/}}
+            volumes:
+                - name: vol1
+                  hostPath:
+                      path: /mnt/efs/properties/st/secrets.properties
+                - name: vol2
+                  hostPath:
+                      path: /mnt/efs/dataDog/dd-java-agent.jar
+

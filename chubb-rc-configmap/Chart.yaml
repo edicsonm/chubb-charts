@@ -1,9 +1,12 @@
 apiVersion: v1
 appVersion: "1.0"
 description: A Helm chart for Chubb Entsia to deploy configmap for RC environment.
+keywords:
+  - Configmap
+  - Entsia
 maintainers:
   - name: Edicson Morales
     email: edicson@entsia.com
 name: chubb-rc-configmap
-version: 0.1.0
-icon: https://edicsonm.github.io/chubb-charts/images/Chubb.png
+version: 0.1.2
+icon: https://www.chubbtravelinsurance.com.au/aceStatic/ACETravel/Shared/Chubb/Images/chubb-logo.svg

@@ -1,3 +1,14 @@
 # Default values for chub-uat-configmap.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
+datadog:
+  DD_AGENT_HOST: datadog
+  DD_APM_ENABLED: true
+  DD_SERVICE_NAME: CHUBB_ON_DEMAND_RC
+DD_TRACE_AGENT_PORT: 32441
+server:
+  JAVA_OPTS: -Xms64m -Xmx2048m -XX:MetaspaceSize=96M -Djava.net.preferIPv4Stack=true
+database:
+  database_helo_ddl_username: rc_cod_helo
+  database_helo_runtime_username: rc_cod_helo_runtime
+  db_hostname: chubb-avmh-nonprodrds-01.cteodrvok6fw.ap-southeast-2.rds.amazonaws.com

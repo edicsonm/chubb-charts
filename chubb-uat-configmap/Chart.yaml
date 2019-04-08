@@ -1,6 +1,12 @@
 apiVersion: v1
 appVersion: "1.0"
 description: A Helm chart for Chubb Entsia
+keywords:
+  - Configmap
+  - Entsia
+maintainers:
+  - name: Edicson Morales
+    email: edicson@entsia.com
 name: chubb-uat-configmap
-version: 0.1.0
-icon: https://edicsonm.github.io/chubb-charts/images/Chubb.png
+version: 0.1.21
+icon: https://www.chubbtravelinsurance.com.au/aceStatic/ACETravel/Shared/Chubb/Images/chubb-logo.svg

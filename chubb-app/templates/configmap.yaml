@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    name: {{ .Release.Name }}-configmap
+    labels:
+        env: st
+data:
+    DD_AGENT_HOST: {{.Values.configmap.dd_agent_host}}
+    DD_APM_ENABLED:  "{{.Values.configmap.dd_apm_enabled}}"
+    DD_SERVICE_NAME: {{.Values.configmap.dd_service_name}}
+    DD_TRACE_AGENT_PORT: "{{.Values.configmap.dd_trace_agent_port}}"
+    JAVA_OPTS: {{.Values.configmap.java_opts}}
+    database-helo-ddl-username:  {{.Values.configmap.database_helo_ddl_username}}
+    database-helo-runtime-username: {{.Values.configmap.database_helo_runtime_username}}
+    db-hostname: {{.Values.configmap.db_hostname}}
