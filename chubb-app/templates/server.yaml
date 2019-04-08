@@ -17,7 +17,7 @@ spec:
         spec:
             containers:
                 - name: {{ .Release.Name }}-server
-                  image: entsia/cod:server_201904080956
+                  image: entsia/cod:server_{{.Values.server.imageTag | replace ":" ""}}
                   ports:
                       - containerPort: {{.Values.server.containerPort}}
                   volumeMounts:
@@ -37,7 +37,7 @@ spec:
                       failureThreshold: 3
                       httpGet:
                           path: /status
-                          port: 6060
+                          port: {{.Values.server.containerPort}}
                           scheme: HTTP
                       initialDelaySeconds: 60
                       periodSeconds: 10
@@ -47,7 +47,7 @@ spec:
                       failureThreshold: 3
                       httpGet:
                           path: /status
-                          port: 6060
+                          port: {{.Values.server.containerPort}}
                           scheme: HTTP
                       initialDelaySeconds: 60
                       periodSeconds: 10
@@ -67,7 +67,7 @@ spec:
                   tty: true
             dnsPolicy: ClusterFirst
             imagePullSecrets:
-                - name: dockerhubentsia
+                - name: {{.Values.server.imagePullSecrets}}
             restartPolicy: Always
             schedulerName: default-scheduler
             securityContext: {}
@@ -75,7 +75,7 @@ spec:
             volumes:
                 - name: vol1
                   hostPath:
-                      path: /mnt/efs/properties/st/secrets.properties
+                      path: /mnt/efs/properties/{{.Values.env}}/secrets.properties
                 - name: vol2
                   hostPath:
                       path: /mnt/efs/dataDog/dd-java-agent.jar

@@ -24,5 +24,6 @@ server:
   containerPort: 6060
   vol1Path: /mnt/efs/dataDog/dd-java-agent.jar
   vol2Path: /mnt/efs/properties/st/secrets.properties
-  imageTag: 201904080956
+  imageTag: :201904080956
   replicaCount: 1
+  imagePullSecrets: dockerhubentsia
