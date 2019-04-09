@@ -6,6 +6,8 @@ metadata:
         env: {{.Values.env}}
 spec:
     type: NodePort
+    selector:
+        app: deployment-{{ .Release.Name }}
     ports:
         - name: {{.Values.server.containerPort}}tcp01
           port: {{.Values.server.containerPort}}
