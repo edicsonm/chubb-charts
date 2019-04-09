@@ -27,3 +27,4 @@ server:
   imageTag: :201904080956
   replicaCount: 1
   imagePullSecrets: dockerhubentsia
+
